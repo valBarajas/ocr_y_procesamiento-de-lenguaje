@@ -1,0 +1,30 @@
+
+
+<script>
+    MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+    };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultado</title>
+    <!-- Incluye MathJax desde un CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <a href="/">Ejemplos</a> <a href="process1/"> Aplicaciones</a>
+    <h1>Nombre de la ecuacion</h1>
+    <p>{{ text }}</p>
+    <h1>Ejemplos</h1>
+    <p>{{ text_ejemplos|safe }}</p>
+    <h1>Aplicaciones</h1>
+    <p>{{ text_aplicaciones|safe }}</p>
+    <a href="/">Volver</a>
+</body>
+</html>

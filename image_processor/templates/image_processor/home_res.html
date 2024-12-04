@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sube una imagen</title>
+</head>
+<body>
+    <h1>Sube una imagen para extraer texto</h1>
+    <form method="POST" enctype="multipart/form-data" action="{% url 'process_image' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Procesar</button>
+    </form>
+</body>
+</html>
